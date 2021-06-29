@@ -11,6 +11,8 @@ inputs:
         required: true  
     format:
         required: true
+    failoncvss:
+        required: false
     others:
         required: false
 runs:
@@ -24,6 +26,8 @@ runs:
         - '${{ inputs.path }}'
         - '--format' 
         - '${{ inputs.format }}'
+        - '--failOnCVSS' 
+        - '${{ inputs.failoncvss }}'
         - '--out'
         -  '/github/workspace/reports'
         - '--noupdate'
