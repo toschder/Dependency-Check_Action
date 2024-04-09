@@ -1,4 +1,4 @@
-FROM owasp/dependency-check-action:latest
+FROM owasp/dependency-check-action:8.4.3
 
 LABEL repository="https://github.com/dependency-check/Dependency-Check_Action" \
       homepage="https://github.com/dependency-check/Dependency-Check_Action" \
